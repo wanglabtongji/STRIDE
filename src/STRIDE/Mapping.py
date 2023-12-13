@@ -53,7 +53,7 @@ def Mapping(topic_st_file, sc_anno_file, spot_deconv_file, model_dir, ntop, out_
     sc_anno_df = pd.read_csv(sc_anno_file, sep = "\t", index_col = 0, header = None)
     spot_deconv_frac = pd.read_csv(spot_deconv_file, sep = "\t", index_col = 0)
     spot_map_count = ntop * spot_deconv_frac 
-    spot_map_count = spot_map_count.map(lambda x: 0 if x < 1 else round(x)) 
+    spot_map_count = spot_map_count.applymap(lambda x: 0 if x < 1 else round(x)) 
     
     
     celltypes = spot_deconv_frac.columns.to_numpy()
