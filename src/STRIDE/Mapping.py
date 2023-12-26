@@ -18,7 +18,7 @@ def MappingParser(subparsers):
         help = "Identify similarest cells for spatial spots. ")
 
     group_input = workflow.add_argument_group("Input arguments")
-    group_input.add_argument("--spot-topic-file", dest = "topic_st_file", required = True,
+    group_input.add_argument("--topic-spot-mat", dest = "topic_st_file", required = True,
         help = "Location of the file which stores the topic distribution of spatial spots (i.e., outdir/outprefix_topic_spot_mat_ntopic.txt). ")
     group_input.add_argument("--sc-celltype", dest = "sc_anno_file", required = True,
         help = "Location of the single-cell celltype annotation file. "
