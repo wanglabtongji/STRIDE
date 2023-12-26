@@ -3,8 +3,8 @@
 # @Author: Dongqing Sun
 # @E-mail: Dongqingsun96@gmail.com
 # @Date:   2021-06-07 21:30:43
-# @Last Modified by:   Dongqing Sun
-# @Last Modified time: 2021-06-07 21:30:45
+# @Last Modified by:   Wenwen Shao
+# @Last Modified time: 2023-12-13
 
 import os
 import sys
@@ -61,7 +61,7 @@ def main():
              alpha = args.alpha, plot = args.plot, pt_size = args.pt_size,
              out_dir = args.out_dir, out_prefix = args.out_prefix)
     elif args.subcommand == "map":
-        Mapping(topic_st_file = args.topic_st_file, model_dir = args.model_dir, ntop = args.ntop, out_dir = args.out_dir, out_prefix = args.out_prefix)
+        Mapping(topic_st_file = args.topic_st_file, sc_anno_file = args.sc_anno_file, spot_deconv_file = args.spot_deconv_file, model_dir = args.model_dir, ntop = args.ntop, out_dir = args.out_dir, out_prefix = args.out_prefix)
     else:
         parser.print_help()
         exit(1)
