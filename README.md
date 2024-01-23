@@ -14,12 +14,15 @@ For full installation and usage of STRIDE, please refer to the [documentation](h
 
 
 ## Change Log
-### v0.0.1
+### v1.0.1
 * Build STRIDE.
-### v0.0.2
+### v1.0.2
 * Add mapping function to identify similarest cells for spatial spots.
 * Fix bugs of integration.
 * Fix bugs of deconvolution with trained topic model.
+### v1.0.3
+* Update mapping function to make cell mapping consistent with the deconvolved fractions.
+
 
 ## Install STRIDE
 ```bash
