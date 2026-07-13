@@ -26,7 +26,7 @@ Spatial TRanscrIptomics DEconvolution by topic modeling (**STRIDE**), is a compu
    :align: center
 
 
-.. include:: release_notes/0.0.1.rst
+.. include:: release_notes/1.0.4.rst
 
 
 .. toctree::

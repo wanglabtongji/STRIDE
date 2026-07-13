@@ -1,0 +1,11 @@
+1.0.2
+~~~~~~~~~~~~~~~~~~~
+
+.. rubric:: Feature
+
+- Add a mapping function to identify the most similar cells for spatial spots.
+
+.. rubric:: Bugfix
+
+- Fix bugs of integration.
+- Fix bugs of deconvolution with a trained topic model.

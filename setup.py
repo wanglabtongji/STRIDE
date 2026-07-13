@@ -18,6 +18,9 @@ exec(open('src/STRIDE/version.py').read())
 with open("requirements.txt") as f:
     requirements = f.read().splitlines()
 
+with open("README.md") as f:
+    long_description = f.read()
+
 def main():
     setup(
         name = "stridespatial",
@@ -29,11 +32,12 @@ def main():
             "":["*.txt"]
         },
         install_requires = requirements,
-        setup_requires = requirements,
         include_package_data = True,
         author = "Dongqing Sun",
         author_email = "Dongqingsun96@gmail.com",
         description = "STRIDE (Spatial TRanscrIptomics DEconvolution by topic modelling) is a cell-type deconvolution tool for spatial transcriptomics. ",
+        long_description = long_description,
+        long_description_content_type = "text/markdown",
         license = "GPL-3.0",
         url = "https://github.com/dongqingsun96/STRIDE",
         

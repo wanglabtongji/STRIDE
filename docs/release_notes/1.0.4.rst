@@ -1,0 +1,7 @@
+1.0.4 `2026-07-12`
+~~~~~~~~~~~~~~~~~~~
+
+.. rubric:: Bugfix
+
+- Fix a bug that produced an empty ``*_spot_celltype_frac.txt`` when a topic column summed to zero (NaN propagated through the deconvolution). Zero-sum topic columns are now filled with 0 after normalization.
+- Sync the celltype-aware mapping so that cell mapping stays consistent with the deconvolved fractions.

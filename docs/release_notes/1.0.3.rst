@@ -1,0 +1,6 @@
+1.0.3
+~~~~~~~~~~~~~~~~~~~
+
+.. rubric:: Improvement
+
+- Update the mapping function to make cell mapping consistent with the deconvolved fractions.
